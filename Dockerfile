@@ -7,4 +7,6 @@ RUN dnf install -y git wget python
 
 RUN mkdir -p /home/workspace/
 
+RUN chmod -R 777 /home/workspace
+
 CMD ["tail", "-f", "/dev/null"]
